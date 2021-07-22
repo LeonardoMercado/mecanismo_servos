@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<Created by="Leonardo Fabio Mercado Benítez" on="07/21/21||20:29:57" using="Simscape Multibody Link Version 7.2" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
-<ModelUnits mass="kilogram" length="meter"/>
+<Created by="Leonardo Fabio Mercado Benítez" on="07/22/21||16:05:29" using="Simscape Multibody Link Version 7.2" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
+<ModelUnits mass="lbmass" length="meter"/>
 <DataUnits mass="kilogram" length="centimeter"/>
-<RootAssembly name="mecanismo.iam" uid="mecanismo.iam_{F3DE2A44-43F3-47E6-FD8B-7D902D8CE4EE}" version="{031C7207-5BF2-4C86-9C92-2D78A9AECAA0}">
+<RootAssembly name="mecanismo.iam" uid="mecanismo.iam_{F3DE2A44-43F3-47E6-FD8B-7D902D8CE4EE}" version="{B8DFF63C-C3D2-E600-457C-383806B6995F}">
 <AssemblyFile name="mecanismo.iam" type="Inventor Assembly"/>
 <InstanceTree>
 <Instance name="base:1" grounded="true" uid="base:1" entityUid="base.ipt_{94E39296-4A4C-1257-227A-33B0EDD10A4A}">
@@ -14,110 +14,74 @@
 </Instance>
 <Instance name="eslabon_1:1" uid="eslabon_1:1" entityUid="eslabon_1.ipt_{AD2576BF-476E-96C8-9A80-29B3107F29A2}">
 <Transform>
-<Rotation>0.45050545511601858 0.89277367507712113 0 -0.89277367507712113 0.45050545511601858 0 0 0 1.0000000000000002</Rotation>
-<Translation>4.9395591458379757e-16 0 0.57032080132785257</Translation>
+<Rotation>0.47437178807755265 0.88032460301647009 0 -0.88032460301647009 0.47437178807755265 0 0 0 1.0000000000000002</Rotation>
+<Translation>4.9395591458379786e-16 0 0.57032080132785257</Translation>
 </Transform>
 </Instance>
 <Instance name="eslasbon_2:1" uid="eslasbon_2:1" entityUid="eslasbon_2.ipt_{41E195E8-43BB-CEE8-2A62-AC8D61AE3B04}">
 <Transform>
-<Rotation>0.41009858543970412 -0.91204119984809562 0 0.91204119984809562 0.41009858543970412 0 0 0 1.0000000000000002</Rotation>
-<Translation>10.812130922784451 -21.426568201850898 0.88782080132785102</Translation>
+<Rotation>0.55396609930109642 -0.8325392247967226 -1.208111400551981e-16 0.8325392247967226 0.55396609930109642 0 0 -1.0058001288836289e-16 1</Rotation>
+<Translation>11.384922913861262 -21.127790472395283 0.88782080132785302</Translation>
 </Transform>
 </Instance>
 </InstanceTree>
 <Constraints>
-<Coincident name="Coincidencia:1">
-<ConstraintGeometry geomType="line">
-<InstancePath>
-<Uid>base:1</Uid>
-</InstancePath>
-<Position>0 0 0.69999999999999996</Position>
-<Axis>0 0 -1.0000000000000011</Axis>
-</ConstraintGeometry>
-<ConstraintGeometry geomType="line">
-<Position>0 0 -1</Position>
-<Axis>0 0 1</Axis>
-</ConstraintGeometry>
-</Coincident>
-<Coincident name="Coincidencia:2">
-<ConstraintGeometry geomType="plane">
-<InstancePath>
-<Uid>eslabon_1:1</Uid>
-</InstancePath>
-<Position>12 4.4718758251106764e-16 0</Position>
-<Axis>0 0 1</Axis>
-</ConstraintGeometry>
-<ConstraintGeometry geomType="plane">
-<InstancePath>
-<Uid>base:1</Uid>
-</InstancePath>
-<Position>1.5254083044323901e-16 -0.54125000000000056 0.70000000000000084</Position>
-<Axis>-1.6838266427432279e-16 0 1.0000000000000011</Axis>
-</ConstraintGeometry>
-</Coincident>
-<Coincident name="Coincidencia:3">
-<ConstraintGeometry geomType="cylinder">
-<InstancePath>
-<Uid>eslabon_1:1</Uid>
-</InstancePath>
-<Position>0 0 0</Position>
-<Axis>0 0 -1</Axis>
-</ConstraintGeometry>
-<ConstraintGeometry geomType="cylinder">
-<InstancePath>
-<Uid>base:1</Uid>
-</InstancePath>
-<Position>0 0 0</Position>
-<Axis>-1.6838266427432279e-16 0 1.0000000000000011</Axis>
-</ConstraintGeometry>
-</Coincident>
-<Coincident name="Coincidencia:4">
-<ConstraintGeometry geomType="plane">
-<InstancePath>
-<Uid>eslasbon_2:1</Uid>
-</InstancePath>
-<Position>18.199999999999999 3.5527136788005009e-15 0</Position>
-<Axis>0 0 0.99999999999999978</Axis>
-</ConstraintGeometry>
-<ConstraintGeometry geomType="plane">
-<InstancePath>
-<Uid>eslabon_1:1</Uid>
-</InstancePath>
-<Position>12 4.6831145147128362e-16 0.31750000000000012</Position>
-<Axis>0 0 1</Axis>
-</ConstraintGeometry>
-</Coincident>
-<Coincident name="Coincidencia:5">
-<ConstraintGeometry geomType="cylinder">
-<InstancePath>
-<Uid>eslasbon_2:1</Uid>
-</InstancePath>
-<Position>-1.7763568394002505e-15 3.5527136788005009e-15 0</Position>
-<Axis>0 0 -0.99999999999999978</Axis>
-</ConstraintGeometry>
-<ConstraintGeometry geomType="cylinder">
-<InstancePath>
-<Uid>eslabon_1:1</Uid>
-</InstancePath>
-<Position>24 -4.1986696822884172e-16 0.3175</Position>
-<Axis>0 0 -1</Axis>
-</ConstraintGeometry>
-</Coincident>
 </Constraints>
 <Joints>
+<Revolute name="De rotación:1">
+<BaseFrame>
+<InstancePath>
+<Uid>base:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-0.9776009337637982 0.21046713354856594 1.6838266427432259e-16 0.21046713354856594 0.9776009337637982 0 -1.4850715632543671e-16 1.1024015573726343e-16 -1</Rotation>
+<Translation>0 0 0.70000000000000007</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>eslabon_1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 -1 0 -1 0 0 0 0 -1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="De rotación:2">
+<BaseFrame>
+<InstancePath>
+<Uid>eslabon_1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 1 0 1 0 0 0 0 -1</Rotation>
+<Translation>24 0 0.3175</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>eslasbon_2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 1 0 1 0 0 0 0 -1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
 </Joints>
 </RootAssembly>
 <Assemblies>
 </Assemblies>
 <Parts>
 <Part name="base.ipt" uid="base.ipt_{94E39296-4A4C-1257-227A-33B0EDD10A4A}" version="{5AE1E778-C621-B80B-119B-9637071E9845}">
+<ModelUnits mass="kilogram" length="meter"/>
 <PartFile name="base.ipt" type="Inventor Part"/>
 <MassProperties>
 <Mass>0.0012062892977108646</Mass>
 <CenterOfMass>6.1015409452108452e-12 -0.8105354204506845 0.35000000000000003</CenterOfMass>
 <Inertia>0.00031362381971362441 0.00020552769946941148 0.00042063789320331504 0 0 -5.9659439276302943e-15</Inertia>
 </MassProperties>
-<GeometryFile name="base_ipt_6039878e.STL" type="STL"/>
+<GeometryFile name="base_ipt_6039878e.STEP" type="STEP"/>
 <VisualProperties>
 <Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
 <Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
@@ -127,13 +91,14 @@
 </VisualProperties>
 </Part>
 <Part name="eslabon_1.ipt" uid="eslabon_1.ipt_{AD2576BF-476E-96C8-9A80-29B3107F29A2}" version="{1A5B67AD-D05B-F930-5240-D0DC8A1F3682}">
+<ModelUnits mass="kilogram" length="meter"/>
 <PartFile name="eslabon_1.ipt" type="Inventor Part"/>
 <MassProperties>
 <Mass>0.013424150129858169</Mass>
 <CenterOfMass>11.576646832048985 0 0.14810494716795808</CenterOfMass>
 <Inertia>0.00063876978902782904 0.67755836026894467 0.67781101132363875 0 -0.0016543119472663364 0</Inertia>
 </MassProperties>
-<GeometryFile name="eslabon_1_ipt_b9ed509b.STL" type="STL"/>
+<GeometryFile name="eslabon_1_ipt_b9ed509b.STEP" type="STEP"/>
 <VisualProperties>
 <Ambient r="0.99607843137254903" g="0.99607843137254903" b="1" a="1"/>
 <Diffuse r="0.99607843137254903" g="0.99607843137254903" b="1" a="1"/>
@@ -143,13 +108,14 @@
 </VisualProperties>
 </Part>
 <Part name="eslasbon_2.ipt" uid="eslasbon_2.ipt_{41E195E8-43BB-CEE8-2A62-AC8D61AE3B04}" version="{0E989100-7989-EA0A-D85E-CA70B9CE1611}">
+<ModelUnits mass="kilogram" length="meter"/>
 <PartFile name="eslasbon_2.ipt" type="Inventor Part"/>
 <MassProperties>
 <Mass>0.0078855994513064402</Mass>
 <CenterOfMass>17.850768257707795 0 0.15570381653357765</CenterOfMass>
 <Inertia>0.00033787385142519379 0.89384914959831208 0.89403943018543353 0 -0.00042879299499088574 0</Inertia>
 </MassProperties>
-<GeometryFile name="eslasbon_2_ipt_9120571f.STL" type="STL"/>
+<GeometryFile name="eslasbon_2_ipt_9120571f.STEP" type="STEP"/>
 <VisualProperties>
 <Ambient r="0.92156862745098034" g="0.92156862745098034" b="0.92156862745098034" a="1"/>
 <Diffuse r="0.92156862745098034" g="0.92156862745098034" b="0.92156862745098034" a="1"/>
